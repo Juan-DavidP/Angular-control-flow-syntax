@@ -1,0 +1,12 @@
+@defer (when isImageVisible) {
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYrjkPeRkL_Q3RThOD5F8Kow8fEKHJMcnwuA&s"
+    alt="Differed Image">
+}
+
+@placeholder {
+    <p>While there's no content...🤔</p> 
+}
+
+@if (!isImageVisible) {
+<button (click)="showImage()">See Image</button>
+}
